@@ -61,6 +61,7 @@ public class Annotations extends WdMethods {
 		dc.setBrowserName(browser);
 		dc.setPlatform(platform);
 		dc.setVersion(version);
+	
 		if(prop.getProperty("RUN").equalsIgnoreCase("remote1")){
 			//new URL--->URL here is java.net
 			driver=new RemoteWebDriver(new URL(prop.getProperty("HUB")), dc);
